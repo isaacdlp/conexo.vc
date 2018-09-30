@@ -163,6 +163,9 @@ a:hover {
   transition: 0.15s;
   opacity: 0.8;
 }
+a:visited {
+  fill:white;
+}
 
 h1, .h1 {
   font-size: 52px;
@@ -2141,7 +2144,7 @@ html.mobile .showForMobile {
   -webkit-animation: animateArrow 4s infinite;
           animation: animateArrow 4s infinite;
 }
-.panel .twitterIcon,
+.panel .socialIcon,
 .panel .panelIcon {
   position: relative;
   top: 5px;
