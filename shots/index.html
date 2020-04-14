@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conexo Ventures</title>
+</head>
+<body>
+
+<script>
+    var urlParams = new URLSearchParams(window.location.search);
+    var imgId = urlParams.get("id");
+    if (imgId) {
+        document.writeln("Screenshot '" + imgId + ".jpg'");
+    }
+</script>
+
+</body>
+</html>
