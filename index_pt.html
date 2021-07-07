@@ -32,6 +32,9 @@
         a.slink {
             margin: 0px 5px;
         }
+        .socialbar {
+            margin-right: 65px;
+        }
         .socialbar li {
             display: inline-block;
             margin-right: 20px;
@@ -48,6 +51,9 @@
             border-radius: 25px;
         }
     </style>
+
+    <!-- Style of the plugin -->
+    <link rel="stylesheet" href="plugin/whatsapp-chat-support.css">
 </head>
 <body class="slides scroll simplifiedMobile smoothScroll noPreload animateOnScroll stage-7" style="display: block;">
 
@@ -1147,5 +1153,50 @@ div.mc-modal {
 }
 </style>
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"20f25a2bceeb649ada37b4410","lid":"d02c22d0c2","uniqueMethods":true}) })</script>
+
+<div class="whatsapp_chat_support wcs_fixed_right" id="ws_cv">
+    <div class="wcs_button wcs_button_circle">
+        <span class="fa fa-whatsapp"></span>
+    </div>
+
+    <div class="wcs_popup">
+        <div class="wcs_popup_close">
+            <span class="fa fa-close"></span>
+        </div>
+        <div class="wcs_popup_header">
+            <span class="fa fa-whatsapp"></span>
+            <strong>Talk to Conexo Ventures</strong>
+
+            <div class="wcs_popup_header_description">Chat with us on Whatsapp</div>
+        </div>
+        <div
+                class="wcs_popup_input"
+                data-number="34620853811"
+                data-availability='{ "monday":"08:30-18:30", "tuesday":"08:30-18:30", "wednesday":"08:30-18:30", "thursday":"08:30-18:30", "friday":"08:30-18:30" }'
+        >
+            <input type="text" placeholder="Ask anything!" />
+            <i class="fa fa-play"></i>
+        </div>
+        <div class="wcs_popup_avatar">
+            <img src="plugin/person_1.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<script src="plugin/moment/moment.min.js"></script>
+<script src="plugin/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
+<script src="plugin/whatsapp-chat-support.js"></script>
+<script>
+    $('#ws_cv').whatsappChatSupport({
+        popupFx                     :   '1',
+        now                         :   '',
+        timezone                    :   'Europe/Madrid',
+        notAvailableMsg             :   'Sorry, I am not available now',
+        almostAvailableMsg          :   'I will be available soon',
+        dialogNotAvailableMsg       :   'Sorry, I am not available now',
+        dialogAlmostAvailableMsg    :   'I will be available soon',
+        defaultMsg                  :   '',
+    });
+</script>
 </body>
 </html>
