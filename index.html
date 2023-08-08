@@ -270,12 +270,12 @@
 <nav class="panel top forceMobileView">
     <div class="sections desktop">
         <div class="left">
-            <a href="index_es.html" style="width: 100px">
+            <a href="index_es.html" style="width: 100px" class="languages_id">
                 <svg class="flag">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#spain"></use>
                 </svg>
             </a>
-            <a href="index_pt.html" style="width: 100px">
+            <a href="index_pt.html" style="width: 100px" class="languages_id">
                 <svg class="flag">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#portugal"></use>
                 </svg>
@@ -297,12 +297,12 @@
     </div>
     <div class="sections compact hidden">
         <div class="left">
-            <a href="index_es.html" style="width: 100px">
+            <a href="index_es.html" style="width: 100px" class="languages_id">
                 <svg class="flag">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#spain"></use>
                 </svg>
             </a>
-            <a href="index_pt.html" style="width: 100px">
+            <a href="index_pt.html" style="width: 100px" class="languages_id">
                 <svg class="flag">
                     <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#portugal"></use>
                 </svg>
@@ -416,11 +416,10 @@
                 <div class="fix-12-12">
                     <ul class="grid">
                         <li class="col-6-12 left">
-                            <a href="http://gedcapital.com"><img src="res/main_logo.png" class="ae-1 fromLeft"/></a>
+                            <img src="res/main_logo.png" class="ae-1 fromLeft"/>
                             <div class="done">
                                 <p class="margin-top-4 ae-5 fromLeft">We invest in exceptional individuals with
-                                    passion for solving hard challenges and bringing
-                                    sustainable innovation to high impact markets</p>
+                                    passion for solving hard challenges by applying artificial intelligence to high impact markets</p>
                                 <p class="margin-top-3 ae-10 fromLeft">Let's improve the world together</p>
                             </div>
                         </li>
@@ -439,7 +438,7 @@
             <div class="wrap">
 
                 <div class="fix-8-12 ae-5 fromTop">
-                    <h1 class="huge done">Globalizing<br/>Latin<br/>Innovation</h1>
+                    <h1 class="huge done">Globalizing<br/>Artificial Intelligence<br/>Innovation</h1>
                 </div>
 
             </div>
@@ -740,7 +739,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li class="col-3-12">
+                        <li class="col-3-12" id="joaquim_id">
                             <div class="fix-3-12">
                                 <!--i class="material-icons ae-4 fromCenter">face</i-->
                                 <div class="done">
@@ -772,7 +771,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li class="col-3-12">
+                        <li class="col-3-12" id="javier_id">
                             <div class="fix-3-12">
                                 <!--i class="material-icons ae-4 fromCenter">face</i-->
                                 <div class="done">
@@ -804,11 +803,11 @@
                                 </p>
                             </div>
                         </li>
-                        <li class="col-3-12">
+                        <li class="col-3-12" id="separator_id">
                             <div class="fix-3-12">
                             </div>
                         </li>
-                        <li class="col-3-12">
+                        <li class="col-3-12" id="paco_id">
                             <div class="fix-3-12">
                                 <div class="done">
                                     <a href="https://www.linkedin.com/in/francisco-mar%C3%ADn-p%C3%A9rez-1b5b745b/"><img src="res/paco.jpg" class="team"></a>
@@ -1210,6 +1209,21 @@ div.mc-modal {
 </style>
 <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"20f25a2bceeb649ada37b4410","lid":"d02c22d0c2","uniqueMethods":true}) })</script>
 
+<script>
+    $(document).ready( function() {
+        $.get("https://ipinfo.io/json?token=e060d03d180a2e", function (data) {
+            if (data.country != 'FR' && data.country != 'PT') {
+                $(".languages_id").css("display", "none");
+                $("#joaquim_id").css("display", "none");
+                $("#javier_id").css("display", "none");
+                $("#separator_id").css("display", "none");
+                $("#paco_id").css("display", "none");
+            };
+        });
+    });
+</script>
+
+<!--
 <div class="whatsapp_chat_support wcs_fixed_right" id="ws_cv">
     <div class="wcs_button wcs_button_circle">
         <span class="fa fa-whatsapp"></span>
@@ -1240,7 +1254,7 @@ div.mc-modal {
 </div>
 
 <script src="plugin/moment/moment.min.js"></script>
-<script src="plugin/moment/moment-timezone-with-data.min.js"></script> <!-- spanish language (es) -->
+<script src="plugin/moment/moment-timezone-with-data.min.js"></script>
 <script src="plugin/whatsapp-chat-support.js"></script>
 <script>
     $('#ws_cv').whatsappChatSupport({
@@ -1254,5 +1268,7 @@ div.mc-modal {
         defaultMsg                  :   '',
     });
 </script>
+-->
+
 </body>
 </html>
