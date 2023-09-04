@@ -1212,7 +1212,7 @@ div.mc-modal {
 <script>
     $(document).ready( function() {
         $.get("https://ipinfo.io/json?token=e060d03d180a2e", function (data) {
-            if (data.country != 'ES' && data.country != 'PT') {
+            if (data.country != 'ES' && data.country != 'PT' && data.country != 'FR') {
                 $(".languages_id").css("display", "none");
                 $("#joaquim_id").css("display", "none");
                 $("#javier_id").css("display", "none");
