@@ -743,93 +743,6 @@
                                 </p>
                             </div>
                         </li>
-                        <li class="col-3-12" id="joaquim_id">
-                            <div class="fix-3-12">
-                                <!--i class="material-icons ae-4 fromCenter">face</i-->
-                                <div class="done">
-                                    <a href="https://www.linkedin.com/in/joaquim-hierro-lopes-130653"><img src="res/joaquim.jpg" class="team"></a>
-                                </div>
-                                <div class="done">
-                                    <p class="big opaque"><a href="https://www.linkedin.com/in/joaquim-hierro-lopes-130653"><b>Joaquim Hierro</b></a></p>
-                                    <p class="small">Partner<br/><b>Portugal</b></p>
-                                </div>
-                                <p>
-                                    <a href="https://www.linkedin.com/in/joaquim-hierro-lopes-130653" class="slink">
-                                        <svg class="socialIcon" style="width:30px;height:30px">
-                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                 xlink:href="#linkedinC"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="https://medium.com/@joaquimhierro" class="slink">
-                                        <svg class="socialIcon" style="width:30px;height:30px">
-                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                 xlink:href="#medium"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="http://twitter.com/conexo_vc" class="slink">
-                                        <svg class="socialIcon" style="width:30px;height:30px">
-                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                 xlink:href="#twitterC"></use>
-                                        </svg>
-                                    </a>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="col-3-12" id="javier_id">
-                            <div class="fix-3-12">
-                                <!--i class="material-icons ae-4 fromCenter">face</i-->
-                                <div class="done">
-                                    <a href="https://www.linkedin.com/in/javier-artiach-basterra-8032a81/"><img src="res/artiach.jpg" class="team"></a>
-                                </div>
-                                <div class="done">
-                                    <p class="big opaque"><a href="https://www.linkedin.com/in/javiergonzalezmanzano/"><b>Javier Artiach</b></a></p>
-                                    <p class="small">Partner<br/><b>Spain</b></p>
-                                </div>
-                                <p>
-                                    <a href="https://www.linkedin.com/in/javier-artiach-basterra-8032a81/" class="slink">
-                                        <svg class="socialIcon" style="width:30px;height:30px">
-                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                 xlink:href="#linkedinC"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="https://medium.com/@jaart1" class="slink">
-                                        <svg class="socialIcon" style="width:30px;height:30px">
-                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                 xlink:href="#medium"></use>
-                                        </svg>
-                                    </a>
-                                    <a href="https://twitter.com/JavierArtiach" class="slink">
-                                        <svg class="socialIcon" style="width:30px;height:30px">
-                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                 xlink:href="#twitterC"></use>
-                                        </svg>
-                                    </a>
-                                </p>
-                            </div>
-                        </li>
-                        <li class="col-3-12" id="separator_id">
-                            <div class="fix-3-12">
-                            </div>
-                        </li>
-                        <li class="col-3-12" id="paco_id">
-                            <div class="fix-3-12">
-                                <div class="done">
-                                    <a href="https://www.linkedin.com/in/francisco-mar%C3%ADn-p%C3%A9rez-1b5b745b/"><img src="res/paco.jpg" class="team"></a>
-                                </div>
-                                <div class="done">
-                                    <p class="big opaque"><a href="https://www.linkedin.com/in/francisco-mar%C3%ADn-p%C3%A9rez-1b5b745b/"><b>Paco Marín</b></a></p>
-                                    <p class="small">Partner<br/><b>Spain</b></p>
-                                </div>
-                                <p>
-                                    <a href="https://www.linkedin.com/in/francisco-mar%C3%ADn-p%C3%A9rez-1b5b745b/" class="slink">
-                                        <svg class="socialIcon" style="width:30px;height:30px">
-                                            <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                                 xlink:href="#linkedinC"></use>
-                                        </svg>
-                                    </a>
-                                </p>
-                            </div>
-                        </li>
                         <li class="col-3-12">
                             <div class="fix-3-12">
                                 <!--i class="material-icons ae-4 fromCenter">face</i-->
@@ -1211,21 +1124,6 @@ div.mc-modal {
     transition: opacity 2s !important;
 }
 </style>
-<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us19.list-manage.com","uuid":"20f25a2bceeb649ada37b4410","lid":"d02c22d0c2","uniqueMethods":true}) })</script>
-
-<script>
-    $(document).ready( function() {
-        $.get("https://ipinfo.io/json?token=e060d03d180a2e", function (data) {
-            if (data.country != 'ES' && data.country != 'PT' && data.country != 'FR') {
-                $(".languages_id").css("display", "none");
-                $("#joaquim_id").css("display", "none");
-                $("#javier_id").css("display", "none");
-                $("#separator_id").css("display", "none");
-                $("#paco_id").css("display", "none");
-            };
-        });
-    });
-</script>
 
 <!--
 <div class="whatsapp_chat_support wcs_fixed_right" id="ws_cv">
